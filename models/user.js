@@ -5,7 +5,7 @@ const UserSchema = new mongoose.Schema({
     address: String,
     position: String,
     salary: Number,
-    update_at: {type: Date, default: Date.now}
+    upadate_at: {type: Date, default: Date.now}
 })
 
 module.exports = mongoose.model('User', UserSchema)

@@ -13,7 +13,7 @@ function deleteUser(uid) {
     url: `/users/user/${uid}`,
     type: "delete",
     success: data => {
-      console.log("delete done", data);
+      console.log("delete done", data)
       window.location.reload()
     },
     error: (jqXHR, textStatus, errorThrown) => {

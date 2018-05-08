@@ -1,4 +1,4 @@
-$(() => $("#createButton").click(createUser));
+$(() => $("#createButton").click(createUser))
 
 function createUser() {
   const salaryVal = $("input[name=salary]").val().trim()
@@ -19,10 +19,10 @@ function createUser() {
   })
 
   request.done(data => {
-    console.log("creation done", data);
+    console.log("creation done", data)
   })
 
   request.fail((jqXHR, textStatus, errorThrown) => {
-    console.log(jqXHR, textStatus, errorThrown);
+    console.log(jqXHR, textStatus, errorThrown)
   })
 }
