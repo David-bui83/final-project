@@ -39,8 +39,8 @@ app.use((err, req, res, next) => {
 })
 
 const mongoose = require('mongoose')
-const user = proecess.env.MDB_USER
-const paswd = process.env.MDB_PASSWORD
+const user = process.env.MDB_USER
+const passwd = process.env.MDB_PASSWORD
 
 mongoose.connect(`mongodb://${user}:${passwd}@ds217360.mlab.com:17360/is445-project`)
 .then(() => console.log('connection successful'))
