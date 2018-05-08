@@ -8,7 +8,7 @@ userController.list = (req, res) => {
         if(err){
             console.log('Error: ', err)
         }else{
-            res.render('users/index',{user})
+            res.render('users/index',{users})
         }
     })
 }
